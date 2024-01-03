@@ -1,11 +1,63 @@
 #fdId1{
     background-color: rgb(71, 176, 119);
+    margin-bottom: 50px;
 }
 
 #txtName{
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 #txtSem{
     border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+#txtJava{
+    border-radius: 10px;
+}
+
+#txtPython{
+    border-radius: 10px;
+}
+
+#txtCpp{
+    border-radius: 10px;
+}
+
+#txtPhp{
+    border-radius: 10px;
+}
+
+#btn1{
+    border-radius: 10px;
+}
+
+#fdId2{
+    background-color: rgb(71, 176, 119);
+}
+
+#txtStudentName{
+    border-radius: 10px;
+}
+
+#txtStudentSem{
+    border-radius: 10px;
+}
+
+#txtTotalMarks{
+    border-radius: 10px;
+}
+
+#txtAvgMarks{
+    border-radius: 10px;
+}
+
+#txtGrade{
+    border-radius: 10px;
+}
+
+#txtResult{
+    border-radius: 10px;
+}       
