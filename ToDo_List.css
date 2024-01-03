@@ -17,7 +17,7 @@ body{
 }
 
 .addBtn{
-    padding: 10px;
+    /* padding: 10px;
     width: 25%;
     background: #d9d9d9;
     color: #555;
@@ -25,7 +25,19 @@ body{
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 10px; */
+
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
 }
 
 .addBtn:hover {
@@ -103,7 +115,7 @@ body{
   input {
     margin: 0;
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
     width: 50%;
     padding: 10px;
     font-size: 16px;

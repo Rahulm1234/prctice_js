@@ -1,0 +1,124 @@
+    <!-- DESCLIMER
+
+    >>variables are let, var, const
+
+    >>var is used in older version of JS which is function scope datatype, and it's value is changable.
+
+    >>let is used in latest version of JS which is block scope datatype, it's value cannot change but we'll update the values.
+
+    >>const stands for constant which means the value of const keyword cannot change or update.
+
+    ______DATATYPES______
+
+    >>there has 2 types of datatypes :
+
+    PRIMITIVE
+    NON-PRIMITIVE
+
+    >>PRIMITIVE datatype have 8 types of datatypes :
+
+    String
+    Number
+    Boolean
+    undefined
+    null
+    bigint
+    symbol
+    object
+
+    >>NON-PRIMITIVE datatype have 3 types of data types :
+
+    An Object
+    An Array
+    A date 
+-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DataTypes</title>
+    </head>
+    <body>
+        <p id="mobName"></p>
+        <p id="mobDet"></p>
+        <P id="undef"></P>
+        <p id="pDet"></p>
+        <p id="prior"></p>
+    </body>
+    </html>
+
+    <script>
+    // declaring VAR variable
+
+    var a=10;
+    console.log(a);
+
+    //changing value of VAR variable
+
+    var a=20;
+    console.log(a);
+
+    // declaring let variable
+    let A=11;
+    console.log(A);
+
+    //updating value of let variable
+    A=21;
+    console.log(A);
+
+    //declaring const variable
+    const PI=3.14;
+    console.log(PI);
+
+    //assign value to variable
+
+    let  compName="SAMSUNG";
+    document.getElementById("mobName").innerHTML=compName;
+
+    //one statement, many variable
+
+    let modName='A23', ROM=64, RAM=6;
+    document.getElementById("mobDet").innerHTML=ROM;
+
+    //undefined values
+    let houseNo;
+    document.getElementById("undef").innerHTML=houseNo;
+
+    //declaring Numbers Datatype
+    let num1=101;
+    console.log(num1);
+
+    //declaring Strng Datatype
+    let str1="str1";
+    console.log(str1)
+
+    //declaring booleans
+    let isFollow=true;
+    console.log(isFollow)
+
+    //declaring object which have key:value pair and have multiple types of datatypes
+    const person={
+        fname:"Rahul",
+        lname:"Modi",
+        age:22
+    }
+    document.getElementById("pDet").innerHTML=person.fname+ "" + " "+person.lname+" and age is " +person.age ;
+
+    //declaring An Array Object
+
+    const priority=["career", "family","health"];
+    document.getElementById("prior").innerHTML=priority[0];
+
+    //declaring null
+
+    let ab=null;
+    console.log(ab)
+
+    //declaring BIGINT
+
+    let big1=BigInt("01234567890123456789")
+    console.log(big1)
+
+</script>

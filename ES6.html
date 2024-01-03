@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+</head>
+<body>
+    <p id="arr"></p>
+    <p id="arr2"></p>
+    <p id="sprd"></p>
+    <p id="map"></p>
+    
+</body>
+</html>
+
+
+<script>
+
+    //es5 used "" for print string where es6 used `` for printing string
+
+    //es5 with "+"  for concat two strings
+    console.log("this is ES6 practice." + "by rahul modi")
+
+    //es6 without "+" for concat two strings
+    console.log(`this is ES6 practice. by rahul modi`)
+
+    //es5 calling variables
+    let fname="rahul";
+    let lname="modi"
+
+    console.log("my name is " + fname + " and my last name is " +lname );
+
+    //es6 calling variables
+    let firstName="rahul";
+    let lastName="modi"
+
+    console.log(`my name is ${firstName}, and my last name is ${lastName}`)
+
+    //performing some operations in ES5
+    let a= 20;
+    let b=30;
+    //ES5
+    console.log("Sum = "+(a+b)+"\nMul = "+(a*b));
+
+    //ES6
+    console.log(`Sum = ${a+b}
+Mul = ${a*b}`)
+
+    //ES6 Methods in strings
+
+    //passing variable values to another variable
+    const fn=`${fname}`;
+    const fullName=`${fname}${lname} `;
+
+    console.log(fn , fullName)
+
+    //startsWith method which can check string is start with given charcter or not.
+    console.log(fn.startsWith("r"))//it return values in boolean wheather it is true or not.for now it'll return true.
+    console.log(fn.startsWith("h"))//it returns false because fn not starts with "h"
+    console.log(fn.endsWith("l"))//it return true bacause fn ends with "l"
+    console.log(fn.endsWith("r"))//it'll return false because fn not ends with  "r"
+    console.log(fn.includes("hu"))//it return value in boolean, includes method check the words in variable strings which is given in ""
+    console.log(fullName.repeat(5))//this method can repeat the strings
+
+
+
+    //Arrow Function in JS
+        let myFunction=(num1, num2)=>num1 + num2;
+        document.getElementById("arr").innerHTML="the sum of two num is : " +myFunction(20, 30);
+
+    //Arrow function with paramerters
+        let hi=" "
+        hi = (mname) => "Hi "+mname+"!";
+        document.getElementById("arr2").innerHTML=hi("Rahul"); 
+
+    //Spread operator(...)
+    const name1=["Rahul"+" Modi"];
+    const name2=[" Ritesh"+" vaghela"]
+
+    const names=[...name1,...name2];
+    document.getElementById("sprd").innerHTML=names;
+
+    //MAP methods
+    const models = new Map([
+        ["A23", "64GB"],
+        ["F08", "128GB"],
+        ["G13", "48GB"]
+    ]);
+
+    // const Company = new Map();
+    // Company.set("SAMSUNG","5000");
+    // Company.set("OPPO", "10000");
+    // Company.set("MOTOROLA", "13000");
+
+    document.getElementById("map").innerHTML=models.get("A23");
+
+</script>
