@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Result.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+
+    <fieldset id="fdId1" style="width:600px">
+        <legend><b>Student Input :</b></legend>
+        Name:<input type="text" id="txtName">   
+        SEM:<input type="text" id="txtSem"> <br/><br/>
+        <table id="tblId1">
+            <tr><td>JAVA</td><td><input type="text" id="txtJava"></td></tr>
+            <tr><td>Python</td><td><input type="text" id="txtPython"></td></tr>
+            <tr><td>C++</td><td><input type="text" id="txtCpp"></td></tr>
+            <tr><td>PHP</td><td><input type="text" id="txtPhp"></td></tr>             
+        </table><br/><br/>
+        <input type="button" value="Get Result">
+    </fieldset>
+    
+    <fieldset id="fdId2" style="width: 400px;">
+    <h2>Report Card</h2>
+    
+    <table id="iblId2">
+        <tr><td>Name</td><td><input type="text" id="txtStudentName" readonly></td></tr>
+        <tr><td>SEM</td><td><input type="text" id="txtStudentSem" readonly></td></tr>
+        <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
+        <tr><td>Average Marks</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
+        <tr><td>Grade</td><td><input type="text" id="txtGrade" readonly></td></tr>
+        <tr><td>Remarks</td><td><input type="text" id="txtResult" readonly></td></tr>
+    </table>    
+</fieldset>
+</body>
+</html>
