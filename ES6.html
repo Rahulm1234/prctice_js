@@ -8,6 +8,7 @@
 <body>
     <p id="arr"></p>
     <p id="arr2"></p>
+    <p id="arr3"></p>
     <p id="sprd"></p>
     <p id="map"></p>
     
@@ -74,6 +75,10 @@ Mul = ${a*b}`)
         hi = (mname) => "Hi "+mname+"!";
         document.getElementById("arr2").innerHTML=hi("Rahul"); 
 
+        // const greetings = " "
+        // greetings =(gm) => "hii"+gm+" !";
+        // document.getElementById("arr3").innerHTML=greetings(" Good Morning");
+
     //Spread operator(...)
     const name1=["Rahul"+" Modi"];
     const name2=[" Ritesh"+" vaghela"]
@@ -94,5 +99,37 @@ Mul = ${a*b}`)
     // Company.set("MOTOROLA", "13000");
 
     document.getElementById("map").innerHTML=models.get("A23");
+
+    const greetings = (nm) => {
+  console.log(`Hello, ${nm}!`);
+};
+
+greetings("Rahul"); // Hello, Rahul!
+
+
+const greet = ()=>{
+    console.log("good morning");
+    console.log("how r u?");
+}
+greet()
+
+const calculateSquare = (sideLength) => {
+    const area = sideLength ** 2;
+    const perimeter = 4 * sideLength;
+
+    return { area, perimeter };
+};
+
+// Example usage:
+const side = 5;
+const { area, perimeter } = calculateSquare(side);
+console.log(`For a square with side length ${side}:`);
+console.log(`Area: ${area}`);
+console.log(`Perimeter: ${perimeter}`);
+
+let myBook = ["JavaScript Introduction", "Nathan Sebhastian"];
+console.log(myBook)
+
+    
 
 </script>

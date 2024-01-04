@@ -1,0 +1,88 @@
+<script>
+
+  //conditional operator if..else..else..if
+  let balance = 4000;
+
+if (balance > 5000) {
+  console.log("You have the money for this trip. Let's go!");
+} else if (balance > 3000) {
+  console.log("You only have enough money for a staycation");
+} else {
+  console.log("Sorry, not enough money. Save more!");
+}
+
+//switch case
+
+let age = 10;
+switch (age) {
+  case 10:
+    console.log("Age is 10");
+    break;
+  case 20:
+    console.log("Age is 20");
+    break;
+  default:
+    console.log("Age is neither 10 or 20");
+}
+
+switch (0) {
+  case 1:
+    console.log("Value is one");
+  case 0:
+    console.log("Value is zero");
+  default:
+    console.log("No matching case");
+}
+
+let grade = 'A'; // You can change the grade here to test different scenarios
+
+let reward;
+
+switch (grade) {
+  case 'A':
+    reward = 'Chocolate';
+    break;
+  case 'B':
+    reward = 'Cookie';
+    break;
+  case 'C':
+    reward = 'Candy';
+    break;
+  default:
+    reward = 'No reward to give.';
+    break;
+}
+
+console.log(`For grade ${grade}, the reward is ${reward}`);
+
+//For loop
+
+// for (let x = 50; x >= 1; x--) {
+//   console.log(x);
+// }
+
+let heads = 0;
+let tails = 0;
+for (x = 1; x <= 10; x++) {
+  if (Math.random() < 0.5) {
+    tails++;
+  } else {
+    heads++;
+  }
+}
+
+console.log("Tossed the coin ten times");
+console.log(`Number of heads: ${heads}`);
+console.log(`Number of tails: ${tails}`);
+
+//While loop 
+
+let i = 1;
+
+while (i <= 6) {
+  console.log(`The value of i = ${i}`);
+  i++;
+}
+
+
+</script>

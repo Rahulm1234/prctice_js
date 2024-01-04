@@ -99,12 +99,12 @@
     console.log(isFollow)
 
     //declaring object which have key:value pair and have multiple types of datatypes
-    const person={
-        fname:"Rahul",
-        lname:"Modi",
-        age:22
-    }
-    document.getElementById("pDet").innerHTML=person.fname+ "" + " "+person.lname+" and age is " +person.age ;
+    // const person={
+    //     fname:"Rahul",
+    //     lname:"Modi",
+    //     age:22
+    // }
+    // document.getElementById("pDet").innerHTML=person.fname+ "" + " "+person.lname+" and age is " +person.age ;
 
     //declaring An Array Object
 
@@ -120,5 +120,27 @@
 
     let big1=BigInt("01234567890123456789")
     console.log(big1)
+
+    //object
+    let myDetails={
+        myAge:22,
+        myLocation:"Ahmedabad",
+        clgName:"CPI"
+    }
+
+    myDetails["myHobbies"]="Watching Movies";
+    myDetails.myLocation="GOA";//Update property/key Value
+    delete myDetails.myAge;//Deleting Key
+
+    console.log(myDetails);
+
+    const person={
+        personName:"Rahul Modi",
+        personAge:23,
+        greet: ()=>{
+            console.log("Hello !, my name is " +person.personName +" and my age is "+person.personAge )
+        }
+    }
+    person.greet();
 
 </script>
